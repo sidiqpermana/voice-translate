@@ -30,7 +30,7 @@ public class TranslateRequest {
 
     public void callApi(String words){
         String encodedWords = TextUtils.htmlEncode(words.replace("\"", "").trim());
-        String url = "http://188.166.236.58:3000/translate?query="+encodedWords;
+        String url = "YOUR END POINT";
         client.get(url, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
